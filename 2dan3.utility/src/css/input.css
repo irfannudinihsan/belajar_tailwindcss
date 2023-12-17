@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+
+    h1 {
+
+        @apply text-8xl;
+    }
+}
+
+@layer components {
+    .grid-card {
+        @apply h-16 bg-blue-500 aspect-[4/3] rounded-xl xl:aspect-[4/1] overflow-hidden relative
+    },
+
+    .cek {
+        @apply w-full h-full  bg-cover bg-center absolute hover:scale-150
+    }
+}

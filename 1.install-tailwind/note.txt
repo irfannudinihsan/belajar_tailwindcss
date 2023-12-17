@@ -1,0 +1,32 @@
+semua ditulis
+
+npx ketika install butuh postcss
+maka butuh npm i postcss
+
+
+langkap yang tepat
+
+1.npm install tailwindcss postcss autoprefixer
+2. npx tailwindcss init (untuk menginisialisasi configurasi tailwindcss)
+3. atur path config
+4. buat file css misal input.css dan tambahkan directive css
+@tailwind base; (reset styling pada browser)
+@tailwind components; (membuat grid system)
+@tailwind utilities; (kelas utilitis)
+compile
+
+5. proses build (file css akhir yang digunakan)
+npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+
+6. atur link untuk output.css
+   <link href="output.css" rel="stylesheet">
+
+
+7. manage directory
+folder public (index.html, style css.css)
+folder src (input.css)
+
+
+npx tailwindcss -o ./public/css/final.css --minify (ketika sudah selesai *jangan lupa atur path link css)
+
+
